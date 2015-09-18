@@ -54,6 +54,7 @@ module Obscenity
         case content
         when :vowels then word.gsub(/[aeiou]/i, '*')
         when :stars  then '*' * word.size
+        when :end    then word[0] + '*' * (word.size - 1)
         when :nonconsonants then word.gsub(/[^bcdfghjklmnpqrstvwxyz]/i, '*')
         when :default, :garbled then '$@!#%'
         else content

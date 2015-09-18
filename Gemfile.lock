@@ -29,6 +29,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   activemodel (~> 3.0)
@@ -38,3 +39,6 @@ DEPENDENCIES
   rake
   rdoc (~> 3.12)
   shoulda
+
+BUNDLED WITH
+   1.10.6
